@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""Module that defines a Square class."""
+"""This module defines a Square class with size validation."""
 
 
 class Square:
-    """A class that defines a square."""
+    """Represents a square."""
 
     def __init__(self, size=0):
+        """Initializes a square with a private validated size."""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
